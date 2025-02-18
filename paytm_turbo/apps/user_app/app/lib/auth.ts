@@ -37,8 +37,7 @@ export const authOptions = {
                     data: {
                         number: credentials.phone,
                         password: hashedPassword,
-                        email:'rtrt@gmail.com',
-                        name:'xyz1'
+                        
                     }
                 });
 
