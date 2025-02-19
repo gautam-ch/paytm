@@ -8,23 +8,23 @@ async  function main(){
          
     const palak= await prisma.user.upsert({
         where:{
-            number:'8450027208'
+            number:'84500272081'
         },
         update:{
 
         },
         create:{
-            number:'845002708',
+            number:'8450027081',
             password:await bcrypt.hash("palak", 10),
             name:'Palak Chouhan',
-            email:"abc@gmail.com",
+            email:"abc1@gmail.com",
         
            onRampTransaction:{
               create:{
                 startTime:new Date(),
                 amount:20000,
                 status:'Success',
-                token:'122',
+                token:'124',
                 provider:'HDFC Bank'
               }
            }
@@ -32,11 +32,11 @@ async  function main(){
 
     const rishi= await prisma.user.upsert({
         where:{
-              number:'6260387423'
+              number:'62603874231'
         },
         update:{},
         create:{
-            number:'6260387423',
+            number:'62603874231',
             password:await bcrypt.hash("rishi", 10),
             name:'Rishi Sen',
 
@@ -46,7 +46,7 @@ async  function main(){
                     amount:50000,
                     status:'Failure',
                     provider:'HDFC Bank',
-                    token:'123'
+                    token:'125'
                 }
             }
         }
