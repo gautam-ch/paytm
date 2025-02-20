@@ -30,7 +30,7 @@ model Balance{
      id         Int    @id @default(autoincrement())
      amount     Int
      userId     Int    @unique 
-     locked     Int
+     locked     Int    @default(0)
      user       User   @relation(fields: [userId],references: [id])    
 }
 
@@ -41,7 +41,7 @@ model onRampTransaction {
   provider      String
   amount        Int
   startTime     DateTime
-  userId        Int              @unique 
+  userId        Int              
   user          User             @relation(fields: [userId],references: [id])
 }
 

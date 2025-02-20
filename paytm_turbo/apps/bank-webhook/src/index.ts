@@ -1,11 +1,14 @@
 import express from 'express';
-import db from '@repo/db/client';
+const db = require("@repo/db/client").default; 
+
 
 
 
 const app = express();
 
-app.post('hdfcWebhook',async (req,res)=>{
+app.use(express.json());
+
+app.post('/hdfcWebhook',async (req,res)=>{
         const payInfo={
             userId:req.body.userId,
             token:req.body.token,
@@ -14,7 +17,7 @@ app.post('hdfcWebhook',async (req,res)=>{
         
         try{
          await db.$transaction([
-             db.balance.updateMany({
+             db.balance.update({
                 where:{
                     userId:payInfo.userId,
                 },
@@ -26,7 +29,7 @@ app.post('hdfcWebhook',async (req,res)=>{
                 }
             }),
     
-            db.onRampTransaction.updateMany({
+            db.onRampTransaction.update({
                 where:{
                     token:payInfo.token
                 },
@@ -52,6 +55,12 @@ app.post('hdfcWebhook',async (req,res)=>{
        
 })
 
-app.listen(3003),()=>{
+app.get('/hdfc',(req,res)=>{
+    res.json({
+        msg:req.body
+    })
+})
+
+app.listen(3003,()=>{
     console.log('express webhook running');
-};
+});

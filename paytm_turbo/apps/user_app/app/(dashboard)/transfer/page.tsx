@@ -26,6 +26,7 @@ async  function getTransactions(){
       
     const session = await getServerSession(authOptions);
 
+
     const   tranx = await prisma.onRampTransaction.findMany({
         where:{
             userId:Number(session?.user?.id)
@@ -57,7 +58,7 @@ export default async function Transfer(){
 
             <div className="grid grid-cols-1  gap-4 md:grid-cols-2 p-4">
 
-                <div>
+                <div >
                     <AddMoney></AddMoney>
                 </div>
 
