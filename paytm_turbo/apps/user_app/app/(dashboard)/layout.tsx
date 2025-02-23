@@ -2,6 +2,7 @@
 
 import { SidebarItem } from "../../components/SidebarItem";
 
+
 export  default function Layout({children}:{children:React.ReactNode}):JSX.Element{
      
     return(
@@ -10,13 +11,14 @@ export  default function Layout({children}:{children:React.ReactNode}):JSX.Eleme
             <div className="w-54 min-h-screen border-r border-slate-300 mr-4 pt-28">
 
                 <div>
-                    <SidebarItem href="/dashboard" title="Home" icon={<HomeIcon/>}></SidebarItem>
-                    <SidebarItem href="/transfer" title="Transfer" icon={<TransferIcon/>}></SidebarItem>
+                    <SidebarItem href="/dashboard"    title="Home"         icon={<HomeIcon/>}></SidebarItem>
+                    <SidebarItem href="/transfer"     title="Transfer"     icon={<TransferIcon/>}></SidebarItem>
                     <SidebarItem href="/transactions" title="Transactions" icon={<TransactionsIcon/>}></SidebarItem>
+                    <SidebarItem href="/p2ptransfer" title="P2P Transfer" icon={<P2PIcon/>} ></SidebarItem>
                 </div>
 
             </div>
-              {children}
+                   {children}              
         </div>
     )
 }
@@ -42,6 +44,16 @@ function TransactionsIcon(){
     return(
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+
+    )
+}
+
+
+function  P2PIcon(){
+    return(
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
         </svg>
 
     )
