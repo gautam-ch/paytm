@@ -52,6 +52,15 @@ export default async function(number:string,amount:string,provider:string){
 
                          await db.$executeRaw`update "Balance" set amount=amount+${amntPaise} where "userId"=${Id}`
 
+                         await db.p2pTransfer.create({
+                            data:{
+                                amount:amntPaise,
+                                timestamp:new Date(),
+                                fromUserId:Number(session.user.id),
+                                toUserId:Id 
+                            }
+                         })
+
                           
                   })    
                 return {
