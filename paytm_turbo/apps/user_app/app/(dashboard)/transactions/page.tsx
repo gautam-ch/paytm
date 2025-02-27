@@ -30,7 +30,7 @@ export default async  function Transactions(){
     const {tranx,id}=  await getP2PTransfer();
     console.log('p2p transfer ',tranx,id);
     return (
-        <div className="w-full h-full">  
+        <div className="w-full h-full ">  
               
                <Transaction p2ptransfer={tranx} id={Number(id)}></Transaction>           
         </div>
