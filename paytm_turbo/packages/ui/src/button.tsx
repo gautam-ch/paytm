@@ -1,9 +1,9 @@
 "use client";
 
-import { ReactNode } from "react";
+import React from "react";
 
 interface ButtonProps {
-  children: ReactNode;
+  children: React.ReactNode;
   onClick: () => void;
 }
 
