@@ -1,5 +1,5 @@
 
-
+//@ts-ignore
 import { Card } from "@repo/ui/card";
 
 interface Transtype{

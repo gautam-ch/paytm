@@ -1,9 +1,13 @@
 "use client"
+//@ts-ignore
 import { Card } from "@repo/ui/card";
+//@ts-ignore
 import { Button } from "@repo/ui/button";
+//@ts-ignore
 import { TextInput } from "@repo/ui/textInput";
 import  transfer     from "../app/lib/actions/transfer";
 import { useState } from "react";
+//@ts-ignore
 import { Center } from "@repo/ui/center";
 
 export const SendCard=()=>{

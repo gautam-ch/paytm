@@ -1,4 +1,4 @@
-
+//@ts-ignore
 import { Card } from "@repo/ui/card";
 
 export function BalanceCard({amount,locked}:{amount:number,locked:number}){
