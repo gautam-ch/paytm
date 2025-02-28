@@ -34,7 +34,7 @@ async  function getTransactions(){
     })
 
     return (
-        tranx.map(t=>({
+        tranx.map((t:any)=>({
             time:t.startTime,
             amount:t.amount,
             status:t.status,
