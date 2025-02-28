@@ -18,6 +18,8 @@ jobs:
         
         - name: Install Dependencies
           run: npm install
+          working-directory: paytm_turbo
           
         - name: Run Build
           run: npm run build
+          working-directory: paytm_turbo
