@@ -17,8 +17,12 @@ jobs:
           node-version: '20'
       
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
         working-directory: paytm_turbo
+
+      - name: Check Installed Modules
+        run: ls -la node_modules/@repo/ui
+        working-directory: paytm_turbo  
         
       - name: Generate Prisma Client
         run: npm run db:generate
