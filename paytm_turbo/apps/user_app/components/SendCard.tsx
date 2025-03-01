@@ -21,8 +21,8 @@ export const SendCard=()=>{
         <Center>
                 <Card title="Send" >
                     <div className="min-w-72 pt-2">
-                    <TextInput placeholder="989*******" onChange={(val)=>{setNumber(val)} } label="Number"/>
-                    <TextInput placeholder="100" onChange={(val)=>{setAmount(val)} } label="Amount"/>
+                    <TextInput placeholder="989*******" onChange={(val:string)=>{setNumber(val)} } label="Number"/>
+                    <TextInput placeholder="100" onChange={(val:string)=>{setAmount(val)} } label="Amount"/>
                         <div className="mt-5     flex justify-center">
                             <Button onClick={async()=>{
                                     console.log(number,amount);

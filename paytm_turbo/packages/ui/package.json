@@ -4,11 +4,11 @@
   "private": true,
   "exports": {
     "./button": "./src/button.tsx",
-    "./card": "./src/Card.tsx",
-    "./center": "./src/Center.tsx",
-    "./appbar":"./src/Appbar.tsx",
-    "./select":"./src/Select.tsx",
-    "./textInput":"./src/TextInput.tsx"
+    "./card": "./src/card.tsx",
+    "./center": "./src/center.tsx",
+    "./appbar":"./src/appbar.tsx",
+    "./select":"./src/select.tsx",
+    "./textInput":"./src/textInput.tsx"
 
   },
   "scripts": {
