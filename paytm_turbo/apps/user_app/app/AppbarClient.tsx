@@ -1,6 +1,7 @@
 "use client"
 
 import {signIn,signOut,useSession} from "next-auth/react";
+// @ts-ignore
 import { Appbar } from "@repo/ui/appbar";
 import { useRouter } from "next/navigation";
 
