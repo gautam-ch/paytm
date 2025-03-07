@@ -3,12 +3,30 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-   "./appbar": "./src/appbar.tsx",
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./center": "./src/center.tsx",
-    "./select": "./src/select.tsx",
-    "./textInput": "./src/textInput.tsx"
+  "./appbar": {
+    "development": "./src/appbar.tsx",
+    "default": "./dist/appbar.js"
+  },
+  "./button": {
+    "development": "./src/button.tsx",
+    "default": "./dist/button.js"
+  },
+  "./card": {
+    "development": "./src/card.tsx",
+    "default": "./dist/card.js"
+  },
+  "./center": {
+    "development": "./src/center.tsx",
+    "default": "./dist/center.js"
+  },
+  "./select": {
+    "development": "./src/select.tsx",
+    "default": "./dist/select.js"
+  },
+  "./textInput": {
+    "development": "./src/textInput.tsx",
+    "default": "./dist/textInput.js"
+  }
 
   },
   "scripts": {
