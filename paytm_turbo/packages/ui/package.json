@@ -3,32 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-  "./appbar": {
-    "development": "./src/appbar.tsx",
-    "default": "./dist/appbar.js"
-  },
-  "./button": {
-    "development": "./src/button.tsx",
-    "default": "./dist/button.js"
-  },
-  "./card": {
-    "development": "./src/card.tsx",
-    "default": "./dist/card.js"
-  },
-  "./center": {
-    "development": "./src/center.tsx",
-    "default": "./dist/center.js"
-  },
-  "./select": {
-    "development": "./src/select.tsx",
-    "default": "./dist/select.js"
-  },
-  "./textInput": {
-    "development": "./src/textInput.tsx",
-    "default": "./dist/textInput.js"
-  }
-
-  },
+      "./appbar": "./dist/appbar.js",
+      "./button": "./dist/button.js",
+      "./card": "./dist/card.js",
+      "./center": "./dist/center.js",
+      "./select": "./dist/select.js",
+      "./textInput": "./dist/textInput.js"
+    },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
