@@ -4,7 +4,14 @@
     "outDir": "dist",
     "paths": {
       "react": ["./node_modules/@types/react"]
-    }
+    },
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "strict": true,
+    "noEmit": true,
+    "moduleResolution": "node"
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

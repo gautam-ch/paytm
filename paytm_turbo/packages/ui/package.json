@@ -3,18 +3,19 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
+   "./appbar": "./src/appbar.tsx",
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
     "./center": "./src/center.tsx",
-    "./appbar":"./src/appbar.tsx",
-    "./select":"./src/select.tsx",
-    "./textInput":"./src/textInput.tsx"
+    "./select": "./src/select.tsx",
+    "./textInput": "./src/textInput.tsx"
 
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "build": "tsc --project tsconfig.build.json"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
