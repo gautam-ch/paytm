@@ -1,13 +1,10 @@
 
 "use client"
-//@ts-ignore
+
 import { Button } from "@repo/ui/button";
-//@ts-ignore
 import { Card } from "@repo/ui/card";
-//@ts-ignore
 import { Select } from "@repo/ui/select";
-//@ts-ignore
-import { TextInput } from "@repo/ui/textInput";
+import { TextInput } from "@repo/ui/textinput";
 import { useState } from "react";
 import createOnRamp from "../app/lib/actions/createOnRampTransaction"
 

@@ -1,4 +1,3 @@
-import { Card } from "@repo/ui/card"
 
 
 interface p2pType{

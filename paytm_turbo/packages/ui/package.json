@@ -8,7 +8,7 @@
     "./appbar": "./src/appbar.tsx",
     "./center": "./src/center.tsx",
     "./select": "./src/select.tsx",
-    "./textinput": "./src/textInput.tsx"
+    "./textinput": "./src/textinput.tsx"
   
   },
   "scripts": {
