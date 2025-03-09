@@ -4,7 +4,7 @@
 import { Button } from "@repo/ui/button";
 import { Card } from "@repo/ui/card";
 import { Select } from "@repo/ui/select";
-import { Textinput } from "@repo/ui/textinput";
+import { Input } from "@repo/ui/input";
 import { useState } from "react";
 import createOnRamp from "../app/lib/actions/createOnRampTransaction"
 
@@ -31,7 +31,7 @@ export const AddMoney=()=>{
                         
                         <div className="w-full">
 
-                            <Textinput label="Amount" placeholder="Amount" onChange={(val:string)=>{ setValue(Number(val)) } }/>
+                            <Input label="Amount" placeholder="Amount" onChange={(val:string)=>{ setValue(Number(val)) } }/>
 
 
                               <div className="py-4 text-left">
