@@ -5,10 +5,10 @@
   "exports": {
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
-    "./appbar": "./src/appbar.tsx",
-    "./center": "./src/center.tsx",
-    "./select": "./src/select.tsx",
-    "./textinput": "./src/textinput.tsx"
+    "./appbar": "./src/Appbar.tsx",
+    "./center": "./src/Center.tsx",
+    "./select": "./src/Select.tsx",
+    "./textinput": "./src/Textinput.tsx"
   
   },
   "scripts": {

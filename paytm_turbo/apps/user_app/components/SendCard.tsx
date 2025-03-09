@@ -2,10 +2,10 @@
 
 import { Card } from "@repo/ui/card";
 import { Button } from "@repo/ui/button";
-import { TextInput } from "../../../packages/ui/src/textinput";
+import { Textinput } from "@repo/ui/textinput";
 import  transfer     from "../app/lib/actions/transfer";
 import { useState } from "react";
-import { Center } from "../../../packages/ui/src/center";
+import { Center } from "@repo/ui/center";
 
 export const SendCard=()=>{
     const [amount,setAmount] = useState("");
@@ -18,8 +18,8 @@ export const SendCard=()=>{
         <Center>
                 <Card title="Send" >
                     <div className="min-w-72 pt-2">
-                    <TextInput placeholder="989*******" onChange={(val:string)=>{setNumber(val)} } label="Number"/>
-                    <TextInput placeholder="100" onChange={(val:string)=>{setAmount(val)} } label="Amount"/>
+                    <Textinput placeholder="989*******" onChange={(val:string)=>{setNumber(val)} } label="Number"/>
+                    <Textinput placeholder="100" onChange={(val:string)=>{setAmount(val)} } label="Amount"/>
                         <div className="mt-5     flex justify-center">
                             <Button onClick={async()=>{
                                     console.log(number,amount);
