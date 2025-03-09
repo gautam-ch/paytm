@@ -1,8 +1,8 @@
 "use client"
 
 import {signIn,signOut,useSession} from "next-auth/react";
-// @ts-ignore
-import { Appbar } from "@repo/ui/appbar";
+
+import { Appbar } from "../../../packages/ui/src/appbar"
 import { useRouter } from "next/navigation";
 
 export function AppbarClient(){

@@ -2,11 +2,10 @@
 
 import { Card } from "@repo/ui/card";
 import { Button } from "@repo/ui/button";
-import { TextInput } from "@repo/ui/textinput";
+import { TextInput } from "../../../packages/ui/src/textinput";
 import  transfer     from "../app/lib/actions/transfer";
 import { useState } from "react";
-
-import { Center } from "@repo/ui/center";
+import { Center } from "../../../packages/ui/src/center";
 
 export const SendCard=()=>{
     const [amount,setAmount] = useState("");

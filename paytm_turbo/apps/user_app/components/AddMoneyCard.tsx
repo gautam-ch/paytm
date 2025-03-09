@@ -3,8 +3,8 @@
 
 import { Button } from "@repo/ui/button";
 import { Card } from "@repo/ui/card";
-import { Select } from "@repo/ui/select";
-import { TextInput } from "@repo/ui/textinput";
+import { Select } from "../../../packages/ui/src/select";
+import { TextInput } from "../../../packages/ui/src/textinput";
 import { useState } from "react";
 import createOnRamp from "../app/lib/actions/createOnRampTransaction"
 

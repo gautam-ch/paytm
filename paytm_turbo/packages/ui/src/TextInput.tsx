@@ -7,7 +7,7 @@ interface inputType{
     label:string
 }
 
-export const TextInput=({placeholder,onChange,label}:inputType)=>{
+export function TextInput({placeholder,onChange,label}:inputType){
        
     return(
         <div className="pt-2">

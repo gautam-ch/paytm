@@ -12,7 +12,7 @@ interface SelectType{
 }
 
 
-export const Select=({options,onSelect}:SelectType)=>{
+export function Select({options,onSelect}:SelectType){
     let  cnt=1;
 
     return (
