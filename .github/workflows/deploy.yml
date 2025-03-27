@@ -39,4 +39,4 @@ jobs:
           sudo docker pull thechoicer/wallet_app:latest
           sudo docker stop wallet_app || true
           sudo docker rm wallet_app || true
-          sudo docker run -d --name wallet_app -e DATABASE_URL=${{ secrets.DATABASE_URL }} -p 3005:3000 thechoicer/wallet_app:latest
+          sudo docker run -d --name wallet_app -e DATABASE_URL=${{ secrets.DATABASE_URL }} -e NEXTAUTH_URL=${{ secrets.NEXTAUTH_URL }}  -e JWT_SECRET=${{ secrets.JWT_SECRET }} -p 3005:3000 thechoicer/wallet_app:latest
