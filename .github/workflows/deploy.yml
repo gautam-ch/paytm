@@ -22,7 +22,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: ./paytm_turbo
-        file: docker/Dockerfile.user
+        file: ./paytm_turbo/docker/Dockerfile.user
         push: true
         tags: thechoicer/wallet_app  
 
