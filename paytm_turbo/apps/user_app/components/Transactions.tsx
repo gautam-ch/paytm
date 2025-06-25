@@ -17,8 +17,6 @@ interface  p2pTransfer{
 
 export default async function Transaction({p2ptransfer,id}:p2pTransfer){
      
-            
-
 
        return ( 
               <div className="w-full h-full">
@@ -29,13 +27,25 @@ export default async function Transaction({p2ptransfer,id}:p2pTransfer){
                            
                             <div className="w-[70%] shadow-xl rounded-xl p-2  border-t-2  ">
                                 <div className="flex justify-center">
-                                <div>
-                                        {
-                                        p2ptransfer.map(t=>(
-                                            t.fromUserId===id?Trnx('debit',t.amount,t.timestamp):Trnx('credit',t.amount,t.timestamp)
-                                        ))
-                                        }
-                                </div>
+                                    {
+                                        p2ptransfer.length===0?(
+                                                <div className="text-3xl  text-[#6a51a6] mt-30 font-semibold ">
+                                                    No Recent Transactions!
+                                                </div>
+                                        ):
+                                        (
+
+                                            <div>
+                                            {
+                                            p2ptransfer.map(t=>(
+                                                t.fromUserId===id?Trnx('debit',t.amount,t.timestamp):Trnx('credit',t.amount,t.timestamp)
+                                            ))
+                                            }
+                                          </div>
+
+                                        )
+                                    }
+                             
                                 </div>
                             </div>
                     </div>

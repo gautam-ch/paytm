@@ -21,11 +21,6 @@ async function getP2PTransfer(){
 }
 
 
-
-
-
-
-
 export default async  function Transactions(){
     const {tranx,id}=  await getP2PTransfer();
     console.log('p2p transfer ',tranx,id);

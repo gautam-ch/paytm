@@ -14,10 +14,10 @@ export const SendCard=()=>{
 
     return(
          
-         <div  className="h-[90vh]">
+         <div  className="h-[80vh]">
         <Center>
                 <Card title="Send" >
-                    <div className="min-w-72 pt-2">
+                    <div className="min-w-94 pt-4">
                     <Input placeholder="989*******" onChange={(val:string)=>{setNumber(val)} } label="Number"/>
                     <Input placeholder="100" onChange={(val:string)=>{setAmount(val)} } label="Amount"/>
                         <div className="mt-5     flex justify-center">

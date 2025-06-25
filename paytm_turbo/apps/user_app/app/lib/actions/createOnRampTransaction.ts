@@ -15,6 +15,7 @@ export default async function(amount:number,provider:string){
             message:'Unauthenticated request'
         }
       }
+      const userId=Number(session.user.id);
 
        const token = (Math.random()*1000).toString();
        
@@ -27,8 +28,23 @@ export default async function(amount:number,provider:string){
                 startTime:new Date(),
                 status:'Processing',
                 token:token,
-                userId:Number(session.user.id)
+                userId:userId
             }
+        })
+        await prisma.balance.upsert({
+          where: {
+            userId: userId,
+          },
+          update: {
+            amount: {
+              increment: amount*100,
+            },
+          },
+          create: {
+            userId:userId,
+            amount: amount*100,
+            locked: 0,
+          },
         })
 
          return {

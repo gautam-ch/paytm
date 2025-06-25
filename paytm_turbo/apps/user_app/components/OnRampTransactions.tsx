@@ -21,7 +21,7 @@ export const OnRampTransactions=({transactions}:TransactionType)=>{
         return (
             <Card title="Recent Transactions">
                      <div className="text-center pb-8 pt-8">
-                       No Recent transactions
+                       No Recent transactions!
                      </div>
             </Card>
         )
